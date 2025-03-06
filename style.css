@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --indigo-300: oklch(0.785 0.115 274.713);
+  --slate-800: oklch(0.279 0.041 260.031);
+  --blue-100: oklch(0.932 0.032 255.585);
+  --blue-600: oklch(0.546 0.245 262.881);
+  --violet-800: oklch(0.432 0.232 292.759);
+  --zinc-800: oklch(0.274 0.006 286.033);
+  --background: #181e25;
+  --card: #29313d;
+  --second-color: #f0b90b;
+  --primary-color: #eaecef;
+  --gray: #474d57;
+  --text-btn: #202630;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+}
+
+.main-card {
+  padding: 2rem 2rem;
+  width: auto;
+  min-width: 300px;
+  background-color: var(--card);
+  border-radius: 1.5rem;
+  color: var(--primary-color);
+}
+
+.main-card .title {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: var(--second-color);
+  margin-bottom: 0.8em;
+}
+
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  margin-bottom: 1em;
+}
+
+.input-wrap input {
+  padding: 8px 8px 8px 1px;
+  color: var(--primary-color);
+  margin-bottom: 1.5em;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: var(--gray) 2px solid;
+  transition: all 300ms ease-in-out;
+}
+
+.input-wrap input:focus {
+  border-bottom: #f0b90b 2px solid;
+}
+
+.drop-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 14px;
+  align-items: center;
+}
+
+.from-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+}
+
+.drop-wrap svg {
+  fill: var(--primary-color);
+  transition: all 200ms ease-in-out;
+}
+
+.drop-wrap svg:hover {
+  opacity: 0.4;
+}
+
+.from-head {
+  margin-bottom: 4px;
+}
+.select-wrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: var(--primary-color);
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.select-wrap select {
+  outline: none;
+  border: none;
+}
+
+.select-wrap img {
+  max-width: 21px;
+}
+
+.result-wrap {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 1.5em;
+}
+
+.cur-text {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.exchange-rate {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.btn-sub {
+  width: 320px;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--second-color);
+  color: var(--text-btn);
+  padding: 10px 8px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-sub:hover {
+  background-color: rgba(
+    255,
+    204,
+    0,
+    0.777
+  ); /* Warna emas Binance dengan sedikit transparansi */
+  color: #000; /* Warna teks hitam agar lebih kontras */
+  opacity: 0.9;
+}
+
+/*Footer*/
+footer {
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 14px;
+}
+
+.footer-name {
+  min-width: 100dvw;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: var(--primary-color);
+  opacity: 0.4;
+}

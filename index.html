@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>UNConvert</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-card">
+        <p class="title">FTI Currency Converter</p>
+        <form action="">
+          <div class="input-wrap">
+            <label for="amount">Enter Amount </label>
+            <input type="text" name="amount" id="input-amount" />
+          </div>
+
+          <div class="drop-wrap">
+            <div class="from-wrap from">
+              <p class="from-head">From:</p>
+              <div class="select-wrap">
+                <img src="https://flagcdn.com/us.svg" width="30" alt="USA" />
+                <select></select>
+              </div>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="24"
+              height="24"
+              viewBox="0 0 48 48"
+              class="icon"
+            >
+              <path
+                d="M 37.484375 5.984375 A 1.50015 1.50015 0 0 0 36.439453 8.5605469 L 38.878906 11 L 31.621094 11 C 29.435501 11 27.449737 12.302618 26.578125 14.306641 L 18.669922 32.496094 C 18.271305 33.4126 17.376733 34 16.376953 34 L 9.1210938 34 L 11.560547 31.560547 A 1.50015 1.50015 0 0 0 10.470703 28.986328 A 1.50015 1.50015 0 0 0 9.4394531 29.439453 L 4.4394531 34.439453 A 1.50015 1.50015 0 0 0 4.4394531 36.560547 L 9.4394531 41.560547 A 1.50015 1.50015 0 1 0 11.560547 39.439453 L 9.1210938 37 L 16.376953 37 C 18.563173 37 20.548539 35.696853 21.419922 33.693359 L 29.330078 15.503906 C 29.728466 14.587928 30.622687 14 31.621094 14 L 38.878906 14 L 36.439453 16.439453 A 1.50015 1.50015 0 1 0 38.560547 18.560547 L 43.560547 13.560547 A 1.50015 1.50015 0 0 0 43.560547 11.439453 L 38.560547 6.4394531 A 1.50015 1.50015 0 0 0 37.484375 5.984375 z M 10.470703 5.9863281 A 1.50015 1.50015 0 0 0 9.4394531 6.4394531 L 4.4394531 11.439453 A 1.50015 1.50015 0 0 0 4.4394531 13.560547 L 9.4394531 18.560547 A 1.50015 1.50015 0 1 0 11.560547 16.439453 L 9.1210938 14 L 16.376953 14 C 17.372953 14 18.272922 14.590906 18.669922 15.503906 L 21.273438 21.492188 L 22.908203 17.730469 L 21.421875 14.308594 C 20.548875 12.298594 18.567953 11 16.376953 11 L 9.1210938 11 L 11.560547 8.5605469 A 1.50015 1.50015 0 0 0 10.470703 5.9863281 z M 26.726562 26.507812 L 25.091797 30.269531 L 26.578125 33.691406 C 27.451125 35.701406 29.432047 37 31.623047 37 L 38.878906 37 L 36.439453 39.439453 A 1.50015 1.50015 0 1 0 38.560547 41.560547 L 43.560547 36.560547 A 1.50015 1.50015 0 0 0 43.560547 34.439453 L 38.560547 29.439453 A 1.50015 1.50015 0 0 0 37.484375 28.984375 A 1.50015 1.50015 0 0 0 36.439453 31.560547 L 38.878906 34 L 31.623047 34 C 30.627047 34 29.727078 33.409094 29.330078 32.496094 L 26.726562 26.507812 z"
+              ></path>
+            </svg>
+            <div class="from-wrap to">
+              <p class="from-head">To:</p>
+              <div class="select-wrap">
+                <img src="https://flagcdn.com/eu.svg" width="30" alt="euro" />
+                <select></select>
+              </div>
+            </div>
+          </div>
+
+          <div class="exchange-rate">
+            <p>Getting exchange rate...</p>
+          </div>
+          <button type="submit" class="btn-sub">Get Exchange Rate</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-name">
+        <p>535240143 - Axel Chrisdy Sanjaya</p>
+        <p>535240077 - Fabio Fransisco</p>
+        <p>535240064 - Vincen Okta Ramadhan</p>
+      </div>
+    </footer>
+  </body>
+  <script type="module" src="./script.js"></script>
+</html>
